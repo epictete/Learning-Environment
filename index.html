@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://becode.org/app/uploads/2020/03/cropped-becode-logo-seal.png" alt="" id="logo">
+        <p>HTML : Balises de base</p>
+    </header>
+    <main>
+        <div>
+        <h2>Les niveaux de titres</h2>
+                <p>En HTML on peut utiliser jusqu'à 6 niveaux de titres avec les balises <code>&lt;h></code></p>
+            <h1><code>&lt;h1></code> sera un titre de niveau 1.</h1>
+            <h2><code>&lt;h2></code> sera un titre de niveau 2.</h2>
+            <h3><code>&lt;h3></code> sera un titre de niveau 3.</h3>
+            <h6>Etc. jusque <code>&lt;h6></code> qui sera un titre de niveau 6.</h6>
+        </div>
+        <div>
+        <h2>Le formatage de texte</h2>
+
+            <p>Le HTML permet de formater du texte avec une syntaxe simple.</p>
+
+            <h3>Italique</h3>
+
+                <p>Pour mettre du texte en italique il y a une méthode :</p>
+
+                <p><code>&lt;i></code>exemple<code>&lt;/i></code> donne <i>exemple</i>.</p>
+
+            <h3>Gras</h3>
+
+                <p>La manière de mettre le texte en gras est similaire à l'italique. Il existe deux méthodes:</p>
+                <p><code>&lt;b></code>exemple<code>&lt;/b></code> donne <b>exemple</b>.</p>
+                <p><code>&lt;strong></code>exemple<code>&lt;/strong></code> donne <strong>exemple</strong>.</p>
+
+            <h3>Barré</h3>
+
+                <p>Pour <del>barrer</del> un mot ou une phrase, il suffit de l'encapsuler comme ceci <code>&lt;del></code>exemple<code>&lt;/del></code>.</p>
+                <p>Il existe une autre manière pour y arriver : <code>&lt;s></code>exemple<code>&lt;/s></code>.</p>
+        </div>
+        <div>
+        <h2>Les listes</h2>
+
+            <p>Le HTML nous permet de faire des listes, ordonnées ou non, avec la possibilité de les imbriquer.</p>
+
+            <h3>Liste à puce</h3>
+
+                <p>Pour réaliser une liste à puce, on peut utiliser les balises <code>&lt;ul></code> pour créer la liste, avec <code>&lt;li></code> pour les éléments.</p>
+
+<pre>
+<code>
+&lt;ul>
+&lt;li>Par
+&lt;li>exemple
+    &lt;ul>
+    &lt;li>omme
+    &lt;li>ceci
+    &lt;/ul>
+&lt;li>!
+&lt;/ul>
+</code>
+</pre>
+
+                <p>Donne:</p>
+                <ul>
+                    <li>Par</li>
+                    <li>Exemple</li>
+                    <ul>
+                        <li>Comme</li>
+                        <li>Ceci</li>
+                    </ul>
+                    <li>!</li>
+                </ul>
+
+            <h3>Liste ordonnée</h3>
+
+                <p>Pour la liste ordonnée, c'est la meme syntaxe que pour la liste à puce sauf qu'on remplace les symboles <code>&lt;ul></code> par <code>&lt;ol></code>.</p>
+
+<pre>
+<code>
+&lt;ol>
+&lt;li>Par
+&lt;li>exemple
+    &lt;ol>
+    &lt;li>omme
+    &lt;li>ceci
+    &lt;/ol>
+&lt;li>!
+&lt;/ol>
+</code>
+</pre>
+
+                <p>Donne:</p>
+                <ol>
+                    <li>Par</li>
+                    <li>Exemple</li>
+                    <ol>
+                        <li>Comme</li>
+                        <li>Ceci</li>
+                    </ol>
+                    <li>!</li>
+                </ol>
+        </div>
+        <div>
+        <h2>Code</h2>
+
+            <p>Il n'y a qu'une manière d'afficher du code en HTML.</p>
+
+            <p>Il suffit de l'insérer dans des balises <code>&lt;code></code> et <code>&lt;/code></code> : <code>var example = true</code></p>
+        </div>
+        <div>
+        <h2>Extras</h2>
+
+            <h3>Checklists</h3>
+
+                <p>Il faut reconnaître que les checklists sont vraiment cool :</p>
+                <input type="checkbox" name="coché" checked>
+                <label for="coché">Elément coché</label><br>
+                <input type="checkbox" name="vide">
+                <label for="vide">Elément non coché</label>
+
+            <h3>Emojis</h3>
+
+                <p>Pour afficher des emojis, il suffit d'écrire la référence décimale de celui qu'on veut utiliser, en commençant par le symbole <code>&#</code> et en termiannt par <code>;</code></p>
+                <p>Voici quelques exemples :</p>
+                <table>
+                    <tr>
+                        <th>Code</th>
+                        <th>Emoji</th>
+                    </tr>
+                    <tr>
+                        <td><code>128512</code></td>
+                        <td>&#128512;</td>
+                    </tr>
+                    <tr>
+                        <td><code>128521</code></td>
+                        <td>&#128521;</td>
+                    </tr>
+                    <tr>
+                        <td><code>128523</code></td>
+                        <td>&#128523;</td>
+                    </tr>
+                    <tr>
+                        <td><code>128567</code></td>
+                        <td>&#128567;</td>
+                    </tr>
+                </table>
+        </div>
+        <div>
+        <h2>Insertion d’une image statique</h2>
+
+            <p>Les images s'insèrent en utilisant la balise suivante <code>&lt;img src="" alt=""></code>.</p>
+            <p>Le lien de l'image setrouve entre les guillements <code>src</code>.</p> 
+            <p>Le texte <code>alt</code> entre guillemets est le texte alternatif de l'image.</p>
+            <img src="https://s3-us-west-2.amazonaws.com/robogarden-new/Articles/upload/blogs/lg-leverage-of-coding.jpg" alt="" id="learn">
+        </div>
+        <div>
+        <h2>Insertion d’une image animée</h2>
+            <p>C'est pareil que pour insérer une image statique avec une seul différence, le lien de l'image doit finir en <code>.gif</code>. Exemple:</p>
+            <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" alt="" id="cat">
+        </div>
+        <div>
+        <h2>Citations</h2>
+            <p>Si vous souhaitez citer quelqu'un, utilisez les balises <code>&lt;blockquote>&lt;/blockquote></code> en début et en fin de la ligne et ce pour chaque ligne de texte à citer.  Exemple :</p>
+
+            <blockquote>Ceci est un texte cité.</blockquote>
+        </div>
+        <div>
+        <h2>Les tables</h2>
+            <p>Pour créer un tableau, il faut d'abord créer les balises : <code>&lt;table></code> et <code>&lt;/table></code></p>
+            <p>Il faut ensuite créer des lignes avec les balises : <code>&lt;tr></code> et <code>&lt;/tr></code></p>
+            <p>Et enfin ajouter les cellules en utilisant les balises : <code>&lt;td></code> et <code>&lt;/td></code></p> 
+            <p>Il existe un cas particulier de cellule pour les en-têtes. Dans ce cas il fuat utiliser les balises : <code>&lt;th></code> et <code>&lt;/th></code></p>
+
+            <h3>Voici un exemple de code :</h3>
+
+<pre>
+<code>
+&lt;table>
+    &lt;tr>
+        &lt;th>En-tête 1&lt;/th>
+        &lt;th>En-tête 1&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Contenu 1&lt;/td>
+        &lt;td>Contenu 2&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Contenu 3&lt;/td>
+        &lt;td>Contenu 4&lt;/td>
+    &lt;/tr>
+&lt;/table>
+</code>
+</pre>
+
+            <h3>Résultat :</h3>
+
+                <table>
+                    <tr>
+                        <th>En-tête 1</th>
+                        <th>En-tête 1</th>
+                    </tr>
+                    <tr>
+                        <td>Contenu 1</td>
+                        <td>Contenu 2</td>
+                    </tr>
+                    <tr>
+                        <td>Contenu 3</td>
+                        <td>Contenu 4</td>
+                    </tr>
+                </table>
+        </div>
+        <div>
+        <h2>Liens automatiques</h2>
+            <p>Pour créer un lien, il faut utiliser la balise <code>&lt;a href=""></code>, suivie du texte du lien et en terminant par <code>&lt;/a></code>.
+            
+                <h3>Exemple</h3>
+                <a href="https://twitter.com/explore">Twitter</a>
+        </div>
+    </main>
+    <footer>
+        <p>2020 &copy; <a href="https://github.com/epictete" target="_blank">epictete</a> - Junior Web Developper @BeCode.org</p>
+    </footer>
+</body>
+</html>

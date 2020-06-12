@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    font-family: helvetica;  
+}
+
+main {
+    background-color: #E8F6F3;
+    padding: 25px 200px;
+}
+
+header {
+    background-color: #1A5276;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+header p {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #1A5276;
+    padding: 15px;
+    background-color: #E8F6F3;
+}
+
+footer {
+    height: 100px;
+    background-color: #1A5276;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}
+
+#logo {
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0
+}
+
+#learn {
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0
+}
+
+#cat {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+    border-radius: 5px;
+  }
+  
+  table, th, td {
+      text-align: center;
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: 0 auto;
+      padding: 10px;
+  }
+
+  pre {
+      padding-left: 100px;
+  }
+
+  div {
+      border: 3px solid #1A5276;
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 20px;
+  }
