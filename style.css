@@ -49,8 +49,8 @@ footer a {
 }
 
 #learn {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     display: block;
     margin: 0 auto;
     padding: 25px 0
@@ -71,23 +71,29 @@ code {
     padding: 2px;
     font-size: 105%;
     border-radius: 5px;
-  }
-  
-  table, th, td {
-      text-align: center;
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 0 auto;
-      padding: 10px;
-  }
+}
 
-  pre {
-      padding-left: 100px;
-  }
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 10px;
+}
 
-  div {
-      border: 3px solid #1A5276;
-      border-radius: 10px;
-      margin: 20px 0;
-      padding: 20px;
-  }
+pre {
+    padding-left: 100px;
+}
+
+div {
+    border: 3px solid #1A5276;
+    border-radius: 10px;
+    margin: 50px 0;
+    padding: 30px 50px;
+}
+
+h2:first-child {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #1A5276;
+}
